@@ -24,6 +24,7 @@ class Form extends Component
 
         $item = new TodoItem();
         $item->description = $this->description;
+        $item->user_id = auth()->id();
         $item->save();
 
         $this->emit('saved');
