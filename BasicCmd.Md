@@ -28,3 +28,13 @@ To migrate the database, run the following command:
 ```
 php artisan migrate
 ```
+
+php artisan make:model TodoItem
+php artisan make:migration create-todo-items-table
+
+cp resources/views/dashboard.blade.php resources/views/todo.blade.php
+
+php artisan make:livewire todo.show
+php artisan make:livewire todo.form
+
+
